@@ -1,0 +1,276 @@
+:root{
+--color-darkseagreen:#91cc99;
+--color-darkslategray: #003838;
+--font-size-21xl: 25px;
+}
+body{
+    margin: 0;
+    font-family: Jost;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100vw;
+
+}
+
+/*hearder design*/
+header{
+    width: calc(100vw - 140px);
+    height: 17vh;
+    background-color: #003838;
+    display: flex;
+    align-items: center;
+    padding:0px 70px;
+} 
+.logo{
+    width: 20%;
+    height: 50%;
+}
+.nav{
+    width: 80%;
+    height: 50%;
+}
+.nav li{
+    list-style-type: none;
+    display: inline;
+    margin: 25px;
+}
+.nav ul{
+    flex-direction: column;
+    float: right;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem; 
+}
+.nav a:hover {
+    color: #F4B400;
+
+}
+.nav img{
+    display: none;
+}
+
+/*hero image*/
+.hero{
+    width: 100vw;
+    height: 77vh;
+    display: flex;
+    flex-direction: row;
+}
+.heroImg{
+    width: 60%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.heroContent{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 7% 0% 0%;
+    flex-direction: column;
+    
+}
+.heroContent p{
+    font-size: 26px;
+    color: #003838;
+    text-align: center;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 60%;
+}
+.heroContent button{
+    width: 13%;
+    position: absolute;
+    height:45px;
+    background-color: #F4B400;
+    border-style: none;
+    border-radius: 3px;
+    color: #003838;
+    font-size: 18px;
+    font-weight: 600;
+}
+.heroContent button:hover{
+    background-color: #f4bc22;
+    cursor: pointer;
+    color: white;
+    
+}
+.btnBg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.whySearchwave{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10% 0%;
+}
+.whySearchwave img{
+    margin: -3%;
+    width: 30%;
+}
+.imgBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.topImg{
+    position: absolute;
+}
+.strengthen-your-online-container {
+    font-size: 55px;
+    display: inline-block;
+    width: 887px;
+    color: var(--color-darkseagreen);
+    margin-left: 70px;
+    margin-top: 200px;
+}
+.your-online-presence {
+    color: var(--color-darkslategray);
+}
+.rectangle-div {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    background-color: rgba(146, 227, 169, 0.8);
+    width: 70%;
+    height: 200px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.unlock-the-potential {
+    font-size: var(--font-size-21xl);
+    width: 800px;
+    font-family: Jost;
+    font-weight: 400;
+    position: relative;
+    
+}
+
+/* card design*/
+
+.card-container {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: #003838;
+    justify-content: space-around;
+}
+
+.card {
+    width: 25%;
+    height: 100px;
+    background-color: #F5F7E6E5;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    height: 90%;
+    border-radius: 10px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+#show-more-button {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+h1 {
+    color: #003838;
+    font-family: Jost;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+/*1st screen change */
+
+
+@media (max-width:1103px) {
+    .nav a{
+        font-size: 1.2rem;
+    }
+  
+    .nav ul{
+    flex-direction: column;
+    float: right;
+    }
+
+    .nav li {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+    }
+    .logo{
+        padding-top: 15px;
+    }
+    .logo img {
+        width: 200px;
+    }
+    .nav img{
+        display: none;
+    }
+}
+
+
+/*2nd screen change*/
+@media (max-width:870px) {
+    .nav ul{
+        display: none;
+    }
+    .logo{
+        padding-top: 0%;
+    }
+    .logo img {
+        width: auto;
+    }
+        .nav img {
+            display: block;
+            float: right;
+            padding-top: 10px;
+            width: 10%;
+        }
+}
+@media (max-width:555px) {
+    header{
+        height: 15vh;
+        padding: 0px 25px;
+        width: calc(100vw - 50px);
+    }
+    .nav img{
+        width: 30px;
+    }
+    .logo img {
+            width:200px;
+        }
+            
+}
