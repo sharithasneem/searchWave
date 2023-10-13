@@ -1,32 +1,32 @@
-
-
-
 /*hero image*/
-.hero{
+/* Default styles for large screens */
+.hero {
     width: 100vw;
     height: 77vh;
     display: flex;
     flex-direction: row;
 }
-.heroImg{
-    width: 60%;
-    height: 100%; 
+
+.heroImg,
+.heroContent {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+}
+
+.heroImg {
+    width: 60%;
     overflow: hidden;
 }
-.heroContent{
+
+.heroContent {
     width: 40%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 0% 7% 0% 0%;
     flex-direction: column;
-    
 }
-.heroContent p{
+
+.heroContent p {
     font-size: 26px;
     color: #003838;
     text-align: center;
@@ -36,30 +36,60 @@
     line-height: normal;
     width: 60%;
 }
-.heroContent button{
+
+.heroContent button {
     width: 13%;
-    position: absolute;
-    height:45px;
+    height: 45px;
     background-color: #F4B400;
-    border-style: none;
+    border: none;
+    /* Shorter syntax for border */
     border-radius: 3px;
     color: #003838;
     font-size: 18px;
     font-weight: 600;
 }
-.heroContent button:hover{
+
+.heroContent button:hover {
     background-color: #f4bc22;
     cursor: pointer;
     color: white;
-    
 }
-.btnBg{
+
+.btnBg {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .heroImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .heroContent {
+        width: 100%;
+        padding: 5% 7%;
+    }
+
+    .heroContent p {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .heroContent button {
+        width: 30%;
+    }
+}
+
+/*why searchwave*/
 .whySearchwave{
     display: flex;
     flex-direction: column;
