@@ -1,0 +1,98 @@
+:root {
+    --color-darkseagreen: #91cc99;
+    --color-darkslategray: #003838;
+    --font-size-21xl: 25px;
+}
+
+body {
+    margin: 0;
+    font-family: Jost;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100vw;
+}
+/*hearder design*/
+header {
+    width: calc(100vw - 140px);
+    height: 15vh;
+    background-color: #003838;
+    display: flex;
+    align-items: center;
+    padding: 0px 70px;
+}
+
+.logo {
+    width: 20%;
+    height: 50%;
+}
+
+.nav {
+    width: 80%;
+    height: 50%;
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline;
+    margin: 15px;
+}
+
+.nav ul {
+    flex-direction: column;
+    float: right;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.nav a:hover {
+    color: #F4B400;
+
+}
+
+.nav img {
+    display: none;
+}
+/*upperDiv div*/
+.container {
+    background-color: #91cc99;
+    height: 80vh;
+    padding: 0px 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    width: cal(100vh-140px);
+}
+.upperDiv {
+   width: 60%;
+   background-color: #F5F7E6;
+   height: 70%;
+   position: absolute;
+   z-index: 2;
+}
+.lowerDiv{
+    background-color: rgba(255, 114, 94, 0.35);
+    height: 95%;
+    width: 75%;
+    position: relative;
+    z-index: 1;
+    margin:50px 0px 30px 70px;
+}
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+
+    /* Adjust the styles for screens with a maximum width of 768px (typical for tablets and mobile) */
+    .upperDiv {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Adjust the styles for screens with a maximum width of 576px (typical for smaller mobile devices) */
+    .upperDiv{
+        font-size: 0.8rem;
+    }
+}
