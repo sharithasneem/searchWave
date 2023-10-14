@@ -5,6 +5,7 @@
     height: 77vh;
     display: flex;
     flex-direction: row;
+    margin-top: 3%;
 }
 
 .heroImg,
@@ -16,7 +17,7 @@
 }
 
 .heroImg {
-    width: 60%;
+    width: 70%;
     overflow: hidden;
 }
 
@@ -25,24 +26,32 @@
     padding: 0% 7% 0% 0%;
     flex-direction: column;
 }
+.contentBox{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8%;
 
+}
 .heroContent p {
-    font-size: 26px;
+    font-size: 1.4rem;
     color: #003838;
     text-align: center;
     font-family: Jost;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 60%;
+    width: 70%;
 }
 
 .heroContent button {
-    width: 13%;
+    width: 15%;
+    min-width: 150px;
     height: 45px;
     background-color: #F4B400;
     border: none;
-    /* Shorter syntax for border */
     border-radius: 3px;
     color: #003838;
     font-size: 18px;
@@ -60,33 +69,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .heroImg {
-        width: 100%;
-        height: auto;
-    }
-
-    .heroContent {
-        width: 100%;
-        padding: 5% 7%;
-    }
-
-    .heroContent p {
-        font-size: 20px;
-        width: 100%;
-    }
-
-    .heroContent button {
-        width: 30%;
-    }
+    background-image: url(image/heroarrow.png);
+    background-size: cover; 
+    width: 100%;
+    height: 60%;
+    background-position: center;
 }
 
 /*why searchwave*/
@@ -100,21 +87,41 @@
 }
 .whySearchwave img{
     margin: -3%;
-    width: 30%;
+    width: 45%;
+    height: 5px;
 }
-.imgBox{
+/*big image*/
+
+.imgBox {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
+    max-width: 100%;
+    /* Ensures the container doesn't overflow its parent */
 }
-.topImg{
+
+.background-img {
+    max-width: 80%;
+    /* Ensures the image doesn't overflow its parent */
+    height: auto;
+    /* Allows the image to maintain its aspect ratio */
+}
+
+.topImg {
+    max-width: 95%;
+    /* Ensures the image doesn't overflow its parent */
+    height: auto;
+    /* Allows the image to maintain its aspect ratio */
     position: absolute;
+    top: 1;
+    left: 1;
 }
+
+/*content*/
 .strengthen-your-online-container {
     font-size: 55px;
-    display: inline-block;
     width: 887px;
     color: var(--color-darkseagreen);
     margin-left: 70px;
@@ -123,6 +130,8 @@
 .your-online-presence {
     color: var(--color-darkslategray);
 }
+
+/*child content*/
 .rectangle-div {
     position: relative;
     left: 50%;
@@ -411,3 +420,108 @@ h1 {
 }
 
 
+@media (max-width: 1103px) {
+
+    /*hero div*/
+    .heroContent {
+        width: 35%;
+    }
+
+    .contentBox {
+        width: 100%;
+        height: 40%;
+        font-size: 0.5rem;
+    }
+
+    .heroImg {
+        width: 80%;
+    }
+
+    /*why serchwave*/
+
+    .whySearchwave h1 {
+        font-size: 50px;
+    }
+
+    .whySearchwave img {
+        height: 3px;
+        width: 38%;
+    }
+    /*content*/
+        .strengthen-your-online-container {
+            font-size: 40px;
+            width: 80%;
+            margin: 50px auto;
+        }
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+
+    /*hero div*/
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .heroImg {
+        width: 100%;
+        height: 550px;
+    }
+
+    .contentBox {
+        padding: 0%;
+    }
+
+    .heroContent {
+        width: 80%;
+        padding: 0% 7%;
+    }
+
+    .heroContent p {
+        font-size: 1.4rem;
+        width: 60%;
+    }
+
+    .heroContent button {
+        width: 30%;
+    }
+
+    .btnBg {
+        width: 60%;
+        height: 200px;
+    }
+        /*why serchwave*/
+
+    .whySearchwave h1 {
+        font-size: 40px;
+    }
+    /*content*/
+    .strengthen-your-online-container {
+            font-size: 30px;
+    }
+}
+
+@media (max-width:550px) {
+
+    /*hero div*/
+    .heroContent p {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .heroContent button {
+        width: 30%;
+    }
+ /*why serchwave*/
+
+ .whySearchwave h1 {
+     font-size: 30px;
+ }
+ /*content*/
+ .strengthen-your-online-container {
+     font-size: 23px;
+
+ }
+
+}
