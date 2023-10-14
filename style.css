@@ -134,87 +134,109 @@
 /*child content*/
 .rectangle-div {
     position: relative;
+    padding: 20 70px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50% );
     border-radius: 15px;
     background-color: rgba(146, 227, 169, 0.8);
     width: 70%;
-    height: 200px;
-    margin-top: 200px;
+    max-width: 800px;
+    /* Limit the maximum width for responsiveness */
+    margin: 0 auto;
+    /* Center horizontally */
+    height: auto;
+    /* Allow content to determine the height */
+    padding: 20px;
+    /* Add some padding for better readability on mobile devices */
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
+    text-align: center;
+    /* Center text horizontally */
 }
 
 .unlock-the-potential {
     font-size: var(--font-size-21xl);
-    width: 800px;
     font-family: Jost;
     font-weight: 400;
     position: relative;
-    
 }
 
+
 /* card design*/
-.container{
+.container {
     position: relative;
 }
 
 .card-container {
-    
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    height: 450px;
-    background:url(image/cardBG.png);
+    flex-wrap: wrap;
+    /* Allow cards to wrap to the next line on smaller screens */
     justify-content: space-around;
+    background: url(image/cardBG.png);
     z-index: 1;
 }
 
 .card {
-    width: 25%;
-    height: 100px;
-    background-color: #F5F7E6E5;
+    width: 45%;
+    /* Adjust the width to make the cards responsive */
+    max-width: 300px;
+    /* Set a maximum width for the cards */
     margin: 10px;
     text-align: center;
-    line-height: 100px;
-    height: 90%;
     border-radius: 10px;
     opacity: 0.95;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    background-color: #F5F7E6E5;
+}
 
+.service_icon {
+    margin-top: 10px;
+}
 
+.serice-name {
+    font-size: 1.8rem;
+    /* Adjust font size for responsiveness */
+    font-weight: 500;
+    /* Adjust font weight for responsiveness */
+    margin-top: 10px;
 }
-.service_icon{
-    margin-top: 10%;
-}
-.serice-name{
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 18px;
-}
-.line{
+
+.line {
     width: 170px;
     height: 1px;
     background: #F4B400;
+    margin: 10px 0;
 }
-.service_content{
-    width: 283px;
-        height: 137px;
-        flex-shrink: 0;
-        color: #003838;
-        font-family: Jost;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 25px;
+
+.service_content {
+    width: 90%;
+    /* Adjust width for responsiveness */
+    max-width: 300px;
+    /* Set a maximum width for the content */
+    color: #003838;
+    font-family: Jost;
+    font-size: 1rem;
+    /* Adjust font size for responsiveness */
+    font-weight: 400;
+    /* Adjust font weight for responsiveness */
+    margin: 10px 0;
+}
+
+#show-more-button {
+    width: 50px;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+        /* Adjust card width for smaller screens */
+        max-width: none;
+        /* Remove maximum width for cards */
+    }
 }
 
 /*footer get btn*/
@@ -522,6 +544,9 @@ h1 {
  .strengthen-your-online-container {
      font-size: 23px;
 
+ }
+ .card-container{
+    flex-direction: column;
  }
 
 }
