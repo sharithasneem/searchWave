@@ -528,7 +528,7 @@ h1 {
     }
     /*content*/
     .strengthen-your-online-container {
-            font-size: 40px;
+        font-size: 40px;
     }
 }
 
@@ -538,7 +538,7 @@ h1 {
     .heroImg{
         height: 400px;
     }
-        .heroImg img {
+    .heroImg img {
             width: 95%;
             
         }
@@ -548,7 +548,7 @@ h1 {
     }
 
     .heroContent button {
-        width: 30%;
+        width: 60%;
     }
 
  /*why serchwave*/
