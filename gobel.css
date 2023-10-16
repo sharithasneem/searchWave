@@ -8,7 +8,6 @@ body {
     margin: 0;
     font-family: 'Jost', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100vw;
-    overflow-x: hidden;
 }
 
 /* Header design */
@@ -18,12 +17,12 @@ header {
     background-color: var(--color-darkslategray);
     display: flex;
     align-items: center;
-    padding: 0 70px;
     justify-content: center;
+        padding: 10px 70px;
 }
 
 .logo {
-    width: 20%;
+    width: 20%; 
     height: 50%;
 }
 
