@@ -150,4 +150,7 @@ header {
     .logo img {
         width: 200px;
     }
+    .ham {
+        width: 8%;
+    }
 }

@@ -5,7 +5,9 @@
     height: 77vh;
     display: flex;
     flex-direction: row;
-    margin-top: 3%;
+    align-items: center;
+    justify-content: center;
+    margin:3% 20px;
 }
 
 .heroImg,
@@ -18,12 +20,14 @@
 
 .heroImg {
     width: 70%;
-    overflow: hidden;
 }
-
+.heroImg img{
+    width: 80%;
+    height: auto;
+}
 .heroContent {
     width: 40%;
-    padding: 0% 7% 0% 0%;
+    padding: 20px 40px 0% 0%;
     flex-direction: column;
 }
 .contentBox{
@@ -43,7 +47,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 70%;
+    width: 90%;
 }
 
 .heroContent button {
@@ -70,9 +74,10 @@
     justify-content: center;
     align-items: center;
     background-image: url(image/heroarrow.png);
-    background-size: cover; 
+    background-size: contain; 
+        background-repeat: no-repeat;
     width: 100%;
-    height: 60%;
+    height: 100%;
     background-position: center;
 }
 
@@ -83,7 +88,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 10% 0%;
+    margin: 10% 20px;
 }
 .whySearchwave img{
     margin: -3%;
@@ -99,6 +104,8 @@
     flex-direction: column;
     position: relative;
     max-width: 100%;
+    
+    
     /* Ensures the container doesn't overflow its parent */
 }
 
@@ -166,6 +173,7 @@
 /* card design*/
 .container {
     position: relative;
+    margin: 0;
 }
 
 .card-container {
@@ -330,7 +338,7 @@
     padding: 0;
     background-color: transparent;
     position: relative;
-    width: 20%;
+    width: 20%; 
     height: 80px;
 }
 
@@ -488,7 +496,7 @@ h1 {
 
     .heroImg {
         width: 100%;
-        height: 550px;
+        height: 500px;
     }
 
     .contentBox {
@@ -510,7 +518,7 @@ h1 {
     }
 
     .btnBg {
-        width: 60%;
+        width: 100%;
         height: 200px;
     }
         /*why serchwave*/
@@ -527,6 +535,13 @@ h1 {
 @media (max-width:550px) {
 
     /*hero div*/
+    .heroImg{
+        height: 400px;
+    }
+        .heroImg img {
+            width: 90%;
+            
+        }
     .heroContent p {
         font-size: 1.3rem;
         width: 100%;
@@ -535,6 +550,7 @@ h1 {
     .heroContent button {
         width: 30%;
     }
+
  /*why serchwave*/
 
  .whySearchwave h1 {
@@ -547,6 +563,12 @@ h1 {
  }
  .card-container{
     flex-direction: column;
+ }
+ .hidden {
+     display: block;
+ }
+ #show-more-button{
+    display: none;
  }
 
 }
