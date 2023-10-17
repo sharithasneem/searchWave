@@ -476,11 +476,18 @@ h2{
             width: 80%;
             margin: 50px auto;
     }
+    .hidden{
+        display: flex;
+    }
+    #show-more-button {
+             display: none;
+     }
+
     .getBtn{
         width: 30%;
     }
     .footer,.container {
-            width: 110%;
+            width: 108%;
         }
 }
 
@@ -537,6 +544,9 @@ h2{
     .getBtn {
             width: 40%;
         }
+    .sitemap {
+            flex-direction: column;
+        }
     .footer,.container {
             width: 110%;
         }
@@ -575,7 +585,7 @@ h2{
     align-items: center;
  }
  .hidden {
-     display: block;
+     display: flex;
  }
  #show-more-button{
     display: none;

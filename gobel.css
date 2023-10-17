@@ -12,7 +12,7 @@ body {
 
 /* Header design */
 header {
-    width: calc(100%-0px);
+    width: calc(100%-140px);
     height: 15vh;
     background-color: var(--color-darkslategray);
     display: flex;
@@ -56,6 +56,7 @@ header {
 .ham {
     display: none;
 }
+
 
 /* 1st screen change */
 @media (max-width: 1103px) {
@@ -104,7 +105,7 @@ header {
             background-color: var(--color-darkslategray);
             display: flex;
             align-items: center;
-            padding: 0px 25px;
+            padding: 0px 36px;
             justify-content: center;
             flex-direction: row;
         }
