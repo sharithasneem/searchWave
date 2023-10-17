@@ -479,6 +479,9 @@ h2{
     .getBtn{
         width: 30%;
     }
+    .footer,.container {
+            width: 110%;
+        }
 }
 
 /* Responsive styles for smaller screens */
@@ -534,6 +537,9 @@ h2{
     .getBtn {
             width: 40%;
         }
+    .footer,.container {
+            width: 110%;
+        }
 }
 
 @media (max-width:550px) {
@@ -584,6 +590,9 @@ h2{
 .get-in-touch{
     font-size: 18px;
     left: 15%;
+}
+.footer, .container{
+    width: 110%;
 }
 
 }
