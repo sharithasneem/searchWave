@@ -286,6 +286,12 @@
     .answer {
         padding: 10px;
     }
+    .hero{
+        height: 80vh;
+    }
+    .aboutText{
+        font-size: 25px;
+    }
     
 }
 
@@ -302,5 +308,8 @@
     .strengthen-your-online-container {
         font-size: 30px;
         margin: 20px auto; /* Center the container and reduce vertical spacing */
+    }
+    .aboutText {
+    font-size: 20px;
     }
 }
