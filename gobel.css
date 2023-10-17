@@ -7,13 +7,12 @@
 body {
     margin: 0;
     font-family: 'Jost', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 100vw;
-    overflow-x: hidden;
+    width: 100%;
 }
 
 /* Header design */
 header {
-    width: calc(100vw - 140px);
+    width: calc(100%-0px);
     height: 15vh;
     background-color: var(--color-darkslategray);
     display: flex;
@@ -67,7 +66,7 @@ header {
         flex-direction: column;
         padding: 20px 70px;
         height: auto;
-        width: calc(100vw - 140px);
+        width: calc(100% - 140px);
     }
 
     .nav {
@@ -101,7 +100,7 @@ header {
 
     header {
             height: 15vh;
-            width: 100vw;
+            width: 100%;
             background-color: var(--color-darkslategray);
             display: flex;
             align-items: center;
