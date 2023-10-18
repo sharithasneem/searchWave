@@ -376,9 +376,12 @@ h2 {
     header {
         flex-direction: row;
         height: 10vh;
-        padding: 20px;
+        padding: 0px 0px;
     }
-
+.logo{
+    width: 70%;
+    padding: 0px 20px;
+}
     .nav img {
         width: 30px;
     }
