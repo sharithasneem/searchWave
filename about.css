@@ -19,12 +19,14 @@
     flex-direction: row;
     align-items: center;
 }
-
+.heroimg{
+    width: 60%;
+}
 .heroimg img{
-    width: 95%;
+    width: 90%;
     max-width: 100%;
     margin-right: 60px;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     max-height: 80vh;
 }
 .aboutText{
@@ -47,13 +49,13 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 10% 0%;
+    margin: 8% 0px;
     color: #003838;
 }
 
 .whySearchwave img {
-    margin: -1%;
-    width: 30%;
+    margin: 0%;
+    width: 20%;
 }
 .faqBox{
     width: 100vw;
@@ -276,13 +278,15 @@
     .faq-card {
         padding: 10px;
         margin: 10px 0;
+        width: 70%;
     }
 
     .question {
         padding: 10px;
         font-size: 1.2rem;
+        max-height: 40px;
     }
-
+    
     .answer {
         padding: 10px;
     }
@@ -297,11 +301,17 @@
 
 /* Media query for mobile-sized screens */
 @media (max-width: 576px) {
+    .faq-card{
+        width: 75%;
+
+    }
     .question {
         padding: 5px;
         font-size: 1rem;
     }
-
+    .question h2{
+        font-size: 18px;
+    }
     .answer {
         padding: 5px;
     }
@@ -311,5 +321,12 @@
     }
     .aboutText {
     font-size: 16px;
+    }
+    .whySearchwave{
+    width: 100%;
+    margin: 0px;
+    }
+    .whySearchwave h1{
+        font-size: 40px;
     }
 }
