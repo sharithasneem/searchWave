@@ -20,7 +20,7 @@ header {
     background-color: var(--color-darkslategray);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 15px 30px;
 }
 
@@ -41,25 +41,25 @@ header {
     margin: 3px 0;
     transition: 0.4s;
 }
-.cancelIcon .bar1 {
+.cancel{
+    position: absolute;
+    right: 40px;
+    top:50px;
+    transition: 0.8s;
+}
+.cancel .bar1 {
     transform: rotate(45deg);
+    margin:-6px 1px;
 }
 
-.cancelIcon .bar2 {
+.cancel .bar2 {
     transform: rotate(-45deg);
+    
 }
 
 /* CSS transitions for smooth animation */
 .bar {
     transition: transform 0.3s ease;
-}
-
-.close .bar1 {
-    transform: rotate(45deg);
-}
-
-.close .bar2 {
-    transform: rotate(-45deg);
 }
 
 .nav {
@@ -84,6 +84,9 @@ header {
     color: white;
     font-size: 1.4rem;
 }
+.nav ul li a:hover{
+    color: #F4B400;
+}
 .dropDown{
     display: none;
 }
@@ -99,9 +102,6 @@ header {
 }
 .dropDown li{
     text-align: center;
-}
-.nav a:hover {
-    color: #F4B400;
 }
 
 /* footer design*/
@@ -415,6 +415,7 @@ h2 {
     display: none;
     align-items: center;
     justify-content: center;
+    transition: all 1.5s ease-in-out;
     }
    
     .getBtn {
@@ -436,7 +437,7 @@ h2 {
         padding: 0px 0px;
     }
 .logo{
-    width: 70%;
+    width: 80%;
     padding: 0px 20px;
 }
     .nav img {
