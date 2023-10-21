@@ -91,7 +91,7 @@
     margin: 10% 20px;
 }
 .whySearchwave img{
-    margin: -3%;
+    margin: 0%;
     width: 45%;
     height: 5px;
 }
@@ -367,8 +367,9 @@
     flex-direction: column;
     align-items: center;
  }
- .hidden {
-     display: flex;
+ .rectangle-div{
+    left: 50%;
+    transform: translateX(-70%);
  }
  #show-more-button{
     display: none;
