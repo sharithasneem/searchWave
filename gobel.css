@@ -110,6 +110,7 @@ header {
 /*footer get btn*/
 .footer {
     width: 100%;
+    height: 500px;
 }
 
 @keyframes shadow-drop-bottom {
@@ -183,6 +184,7 @@ header {
     font-weight: 600;
     font-family: var(--font-jost);
     color: var(--color-darkslategray);
+    display: flex;
     text-align: center;
 }
 
@@ -267,7 +269,6 @@ h2 {
 
 .sitemap {
     display: flex;
-    padding: 10px;
     flex-direction: row;
     gap: 10px;
     flex: 1 0 0;
@@ -281,6 +282,7 @@ h2 {
     line-height: normal;
     text-transform: capitalize;
     padding: 0px 70px;
+    width: 100%;
 }
 
 .follow-us-parent {
@@ -419,14 +421,18 @@ h2 {
     }
    
     .getBtn {
-            width: 40%;
-        }
+        width: 40%;
+    }
     .sitemap {
-            flex-direction: column;
+        flex-direction: column;
+        height: 500px;
         }
     .footer,.container {
             width: 100%;
         }
+.hidden {
+    display: flex;
+}
 }
 
 @media (max-width: 555px) {
@@ -450,5 +456,9 @@ h2 {
     .ham {
         width: 8%;
     }
+ .get-in-touch{
+    top: 25%;
+    font-size: 18px;
+ }
  
 }

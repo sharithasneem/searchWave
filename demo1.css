@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.pricing-plan {
+    display: flex;
+    justify-content: space-around;
+}
+
+.plan {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.plan h2 {
+    color: #333;
+}
+
+.plan p {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .pricing-plan {
+        flex-direction: column;
+    }
+
+    .plan {
+        margin: 10px 0;
+        max-width: 90%;
+    }
+
+    .plan p {
+        font-size: 20px;
+    }
+}
+
+/* For screens with a minimum width of 769px */
+@media (min-width: 769px) {
+    main {
+        min-height: 70vh;
+    }
+
+    .pricing-plan {
+        max-width: 1200px;
+    }
+
+    .plan {
+        flex: 1;
+    }
+}

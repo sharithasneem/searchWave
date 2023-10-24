@@ -173,7 +173,6 @@
 /* card design*/
 .container {
     position: relative;
-    margin: 0;
 }
 
 .card-container {
@@ -237,9 +236,10 @@
     width: 50px;
     margin: 20px 0;
 }
-
-
-
+.sitemap {
+    width: 100%;
+    height: 280px;
+}
 @media (max-width: 1103px) {
 
     /*hero div*/
@@ -276,10 +276,8 @@
         display: flex;
     }
     #show-more-button {
-             display: none;
-     }
-
-    
+        display: none;
+    } 
 }
 
 /* Responsive styles for smaller screens */
@@ -328,10 +326,12 @@
     .strengthen-your-online-container {
         font-size: 40px;
     }
+    
     /*card design*/
     .card {
             width: 80%;
         }
+    
     
 }
 
@@ -367,6 +367,7 @@
     flex-direction: column;
     align-items: center;
  }
+ 
  .rectangle-div{
     left: 50%;
     transform: translateX(-70%);
@@ -375,7 +376,10 @@
     display: none;
  }
 .sitemap{
+    margin-top: 20px;
     flex-direction: column;
+    width: 100%;
+    height: 700px;
 }
 .mail,.phone {
     height: 30%;
