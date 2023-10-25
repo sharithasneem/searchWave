@@ -290,6 +290,7 @@ h2 {
 
 .follow-us-parent {
     width: 30%;
+    height: 40%;
 
 }
 
@@ -297,7 +298,7 @@ h2 {
 .phone {
     display: flex;
     align-items: center;
-    height: 20%;
+    height: 30%;
 }
 
 .link {
@@ -434,9 +435,9 @@ h2 {
     .footer,.container {
             width: 100%;
         }
-.hidden {
+    .hidden {
     display: flex;
-}
+    }
 }
 
 @media (max-width: 555px) {

@@ -70,6 +70,10 @@
         margin-top: 50px;
         width: 70%;
      }
+     .card{
+        width: 95%;
+     }
+     
      .whySearchwave{
         display: none;
      }
