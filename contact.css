@@ -8,6 +8,12 @@
     flex-direction: row;
     align-items: center;
 }
+.bro{
+    width: 60%;
+}
+.bro img{
+    width: 100%;
+}
 .contact{
     width: 50%;
     height: 100%;
