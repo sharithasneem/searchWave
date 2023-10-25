@@ -2,7 +2,7 @@
 /* Basic styling for the card layout */
 .hero{
     width: calc(100vw - 140px);
-    height: 90%;
+    height: 70vh;
     margin: 40px 70px;
     display: flex;
     flex-direction: row;
@@ -12,14 +12,14 @@
     width: 60%;
 }
 .bro img{
-    width: 100%;
+    width: 95%;
+    height: 100%;
 }
 .contact{
     width: 50%;
-    height: 100%;
+    height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .card {
     border: 1px solid #ddd;
@@ -42,170 +42,39 @@
     font-size: 30px;
     color: var(--color-darkslategray);
     font-family: jost;
-    margin-bottom: 40px;
-
 }
 .whySearchwave h1{
-    margin: -15px;
+    font-size: 55px;
 }
 .whySearchwave img {
-    width: 30%;
+    width: 40%;
 }
- /*foooter*/
-.footer {
-    width: 100%;
-    height: 300px;
+.sitemap{
+    height:300px;
 }
-
-@keyframes shadow-drop-bottom {
-    0% {
-        box-shadow: 0 0 0 0 transparent;
-    }
-
-    to {
-        box-shadow: 0 12px 70px -12px rgb(0 0 0/45%);
-    }
+@media (max-width: 1130px) {
+    .sitemap{
+        height:400px;
+     }
 }
 
-@keyframes pulsate {
-    0% {
-        transform: scale(1);
-        transform-origin: center center;
-        animation-timing-function: ease-out;
-    }
-
-    10% {
-        transform: scale(0.91);
-        animation-timing-function: ease-in;
-    }
-
-    17% {
-        transform: scale(0.98);
-        animation-timing-function: ease-out;
-    }
-
-    33% {
-        transform: scale(0.87);
-        animation-timing-function: ease-in;
-    }
-
-    45% {
-        transform: scale(1);
-        animation-timing-function: ease-out;
-    }
-}
-
-.getBtn-child,
-.getBtn-item {
-    position: absolute;
-    border: 1px solid var(--color-black);
-    box-sizing: border-box;
-}
-
-.getBtn-child {
-    top: 13.21%;
-    right: 0;
-    bottom: 0;
-    left: 4.58%;
-    background-color: var(--color-darkslategray);
-}
-
-.getBtn-item {
-    top: 0;
-    right: 4.58%;
-    bottom: 13.21%;
-    left: 0;
-    background: linear-gradient(#91cc99, #91cc99),
-        linear-gradient(#91cc99, #91cc99), linear-gradient(#91cc99, #91cc99),
-        linear-gradient(#91cc99, #91cc99), #91cc99;
-}
-
-.get-in-touch {
-    position: absolute;
-    top: 20.75%;
-    left: 16.34%;
-    font-size: 25px;
-    font-weight: 600;
-    font-family: var(--font-jost);
-    color: var(--color-darkslategray);
-    text-align: left;
-}
-
-.upperFooter {
-    width: 100%;
-    display: flex;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
-}
-
-.getBtn {
-    cursor: pointer;
-    border: 0;
-    padding: 0;
-    background-color: transparent;
-    position: relative;
-    width: 20%;
-    height: 80px;
-}
-
-.getBtn:hover {
-    animation: 1s ease 0s infinite normal none shadow-drop-bottom;
-    opacity: 1;
-}
-
-.getBtn:active {
-    animation: 1s ease 0s infinite normal none pulsate;
-    opacity: 1;
-}
-/*footer sitemap*/
-
-.sitemap {
-    height: 280px;
-}
-.follow-us-parent {
-    width: 30%;
-}
-
-.mail,
-.phone {
-    display: flex;
-    align-items: center;
-    height: 20%;
-}
-
-.link {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-}
-
-.link a {
-    font-size: 18px;
-    color: #003838;
-
-}
-
-.bottom {
-    width: 100%;
-    background-color: white;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.bottom h5 {
-    color: #000;
-    font-family: Jost;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
 @media (max-width: 768px) {
      .hero{
-        flex-direction: column;
+        flex-direction: column-reverse;
+        height: auto;
+     }
+     .bro{
+        width: 95%;
+     }
+     .contact{
+        margin-top: 50px;
+        width: 70%;
+     }
+     .whySearchwave{
+        display: none;
+     }
+     .sitemap{
+        height:400px;
      }
 }
 @media (max-width:550px) {

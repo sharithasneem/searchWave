@@ -285,6 +285,7 @@ h2 {
     text-transform: capitalize;
     padding: 0px 70px;
     width: 100%;
+    padding-top: 10px;
 }
 
 .follow-us-parent {
@@ -387,6 +388,7 @@ h2 {
             padding: 0px 20px;
             justify-content: center;
             flex-direction: row;
+            font-family: Aria;
         }
     .nav{
         display: flex;
