@@ -1,29 +1,39 @@
 
-/*upperDiv div*/
-.container {
-    background-color: #91cc99;
-    height: 80vh;
-    padding: 0px 70px;
+/* styles.css */
+.process-container {
     display: flex;
-    justify-content: center;
-    margin-top: 3%;
-    width: cal(100vh-140px);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 950px;
+    /* Adjust the max width as needed */
+    margin: 0 auto;
+    padding: 200px 0px;
 }
-.upperDiv {
-   width: 60%;
-   background-color: #F5F7E6;
-   height: 70%;
-   position: absolute;
-   z-index: 2;
+
+.process-step {
+    width: calc(35% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box;
 }
-.lowerDiv{
-    background-color: rgba(255, 114, 94, 0.35);
-    height: 95%;
-    width: 75%;
-    position: relative;
-    z-index: 1;
-    margin:50px 0px 30px 70px;
+
+.process-step img {
+    max-width: 100%;
+    height: auto;
 }
+.process-step p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #333;
+    /* Text color */
+}
+.process-step p span{
+    color: #F4B400;
+    font-weight: 800;
+}
+
+/* Add more media queries for smaller screens if necessary */
 /* Media query for responsiveness */
 @media (max-width: 768px) {
 
@@ -31,7 +41,15 @@
     .upperDiv {
         font-size: 1rem;
     }
+    .process-step {
+        width: calc(50% - 20px);
+    }
+    .process-step p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
 }
+
 
 @media (max-width: 576px) {
 
