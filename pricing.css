@@ -1,10 +1,63 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 30%;
+    font-family: Arial, sans-serif;
+    
+}
+
+.typing-header {
+    font-size: 40px;
+    color: #F4B400;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid transparent;
+    animation: typing 8s steps(20) infinite, blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #F4B400
+    }
+}
+
+@media (max-width: 768px) {
+    .typing-header {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .typing-header {
+        font-size: 2rem;
+    }
+}
 
 /* styles.css */
 .process-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 950px;
+    max-width: 90%;
     /* Adjust the max width as needed */
     margin: 0 auto;
     padding: 200px 0px;
@@ -37,10 +90,6 @@
 /* Media query for responsiveness */
 @media (max-width: 768px) {
 
-    /* Adjust the styles for screens with a maximum width of 768px (typical for tablets and mobile) */
-    .upperDiv {
-        font-size: 1rem;
-    }
     .process-step {
         width: calc(50% - 20px);
     }
@@ -52,9 +101,16 @@
 
 
 @media (max-width: 576px) {
-
-    /* Adjust the styles for screens with a maximum width of 576px (typical for smaller mobile devices) */
-    .upperDiv{
-        font-size: 0.8rem;
+    .process-container {
+        padding: 100px 0;
     }
+
+    .process-step {
+        width: calc(100% - 20px);
+    }
+
+    .process-step p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
 }
