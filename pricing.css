@@ -1,57 +1,40 @@
-.heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    width: 30%;
-    font-family: Arial, sans-serif;
-    
-}
 
-.typing-header {
-    font-size: 40px;
-    color: #F4B400;
-    text-transform: uppercase;
+.heading{
+    display: flex;
+    height: 20vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    margin:40px 70px;
+}
+.gushing-header {
+    font-size: 3.4rem;
+    color: transparent;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 1px solid transparent;
-    animation: typing 8s steps(20) infinite, blink-caret 0.5s step-end infinite;
+    width: 0;
+    animation: gushing 1s steps(20) forwards;
 }
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-
+@keyframes gushing {
     to {
-        width: 100%
+        color: #003838;
+        width: 37%;
     }
 }
 
-@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: #F4B400
-    }
+/*intro para*/
+.para {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
-@media (max-width: 768px) {
-    .typing-header {
-        font-size: 3rem;
-    }
+.responsive-paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
 }
-
-@media (max-width: 576px) {
-    .typing-header {
-        font-size: 2rem;
-    }
-}
-
+  
 /* styles.css */
 .process-container {
     display: flex;
@@ -60,7 +43,7 @@
     max-width: 90%;
     /* Adjust the max width as needed */
     margin: 0 auto;
-    padding: 200px 0px;
+    padding: 100px 0px;
 }
 
 .process-step {
@@ -96,7 +79,12 @@
     .process-step p {
         font-size: 14px; /* Adjust font size for smaller screens */
     }
-
+    .gushing-header {
+        font-size: 3rem;
+    }
+    .responsive-paragraph {
+    font-size: 14px;
+}
 }
 
 
@@ -112,5 +100,10 @@
     .process-step p {
         font-size: 14px; /* Adjust font size for smaller screens */
     }
-
+    .gushing-header {
+        font-size: 2rem;
+    }
+    .responsive-paragraph {
+        font-size: 12px;
+    }
 }
