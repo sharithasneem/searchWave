@@ -1,13 +1,13 @@
 
 .heading{
     display: flex;
-    height: 20vh;
+    height: 10vh;
     overflow: hidden;
     font-family: Arial, sans-serif;
     margin:40px 70px;
 }
 .gushing-header {
-    font-size: 3.4rem;
+    font-size: 3.8rem;
     color: transparent;
     white-space: nowrap;
     overflow: hidden;
@@ -17,20 +17,19 @@
 @keyframes gushing {
     to {
         color: #003838;
-        width: 37%;
+        width: 45%;
     }
 }
 
 /*intro para*/
 .para {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'Roboto', Arial, sans-serif;
+     font-family: 'Roboto', Arial, sans-serif;
+     margin:0 70px;
 }
 
 .responsive-paragraph {
-    font-size: 16px;
+    font-size: 25px;
     line-height: 1.6;
     color: #333;
 }
@@ -68,7 +67,14 @@
     color: #F4B400;
     font-weight: 800;
 }
-
+@media (max-width:1096px) {
+    @keyframes gushing {
+            to {
+                color: #003838;
+                width: 60%;
+            }
+        }
+}
 /* Add more media queries for smaller screens if necessary */
 /* Media query for responsiveness */
 @media (max-width: 768px) {
@@ -83,10 +89,15 @@
         font-size: 3rem;
     }
     .responsive-paragraph {
-    font-size: 14px;
+    font-size: 20px;
+    }
+    @keyframes gushing {
+        to {
+            color: #003838;
+            width: 85%;
+        }
+    }
 }
-}
-
 
 @media (max-width: 576px) {
     .process-container {
@@ -104,6 +115,9 @@
         font-size: 2rem;
     }
     .responsive-paragraph {
-        font-size: 12px;
+        font-size: 22px;
+    }
+    .heading{
+        width: calc(100% - 20px);
     }
 }
