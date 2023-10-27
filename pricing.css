@@ -100,12 +100,15 @@
 }
 
 @media (max-width: 576px) {
+    .para{
+        margin: 0px 30px;
+    }
     .process-container {
         padding: 100px 0;
     }
 
     .process-step {
-        width: calc(100% - 20px);
+        width: calc(100% - 70px);
     }
 
     .process-step p {
@@ -115,7 +118,16 @@
         font-size: 2rem;
     }
     .responsive-paragraph {
-        font-size: 22px;
+        font-size: 18px;
+    }
+    .heading{
+            margin:20px 25px;
+        }
+    @keyframes gushing {
+        to {
+            color: #003838;
+            width: 100%;
+        }
     }
     
 }
