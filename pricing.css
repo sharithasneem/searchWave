@@ -50,6 +50,7 @@
     margin-bottom: 20px;
     text-align: center;
     box-sizing: border-box;
+    
 }
 
 .process-step img {
@@ -108,7 +109,7 @@
     }
 
     .process-step {
-        width: calc(100% - 70px);
+        width: calc(100% - 20px);
     }
 
     .process-step p {
