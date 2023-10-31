@@ -287,7 +287,7 @@
         padding: 10px;
     }
     .hero{
-        height: 80vh;
+        height: 85vh;
     }
     .aboutText{
         font-size: 25px;
@@ -302,7 +302,7 @@
 /* Media query for mobile-sized screens */
 @media (max-width: 576px) {
     .hero{
-        height: 75vh;
+        height: 80vh;
     }
     .faq-card{
         width: 75%;
