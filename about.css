@@ -302,7 +302,7 @@
 /* Media query for mobile-sized screens */
 @media (max-width: 576px) {
     .hero{
-        height: 70vh;
+        height: 75vh;
     }
     .faq-card{
         width: 75%;
@@ -323,7 +323,7 @@
         margin: 20px auto; /* Center the container and reduce vertical spacing */
     }
     .aboutText {
-    font-size: 16px;
+    font-size: 20px;
     }
     .whySearchwave{
     width: 100%;
