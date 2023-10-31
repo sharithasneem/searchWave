@@ -96,7 +96,8 @@ header {
     text-decoration: none;
     color: var(--color-darkslategray);
     font-size: 1.8rem;
-    font-weight: 900;
+    font-weight: 100;
+    
     
 }
 .dropDown ul{
@@ -104,6 +105,7 @@ header {
 }
 .dropDown li{
     text-align: center;
+    margin-bottom: 7px;
 }
 
 /* footer design*/

@@ -7,7 +7,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding:5% 20px;
+    padding:3% 20px;
 }
 
 .heroImg,
@@ -17,7 +17,6 @@
     align-items: center;
     height: 100%;
 }
-
 .heroImg {
     width: 70%;
 }
