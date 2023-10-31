@@ -2,12 +2,12 @@
 /* Default styles for large screens */
 .hero {
     width: 100%;
-    height: 77vh;
+    height: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding:7% 20px;
+    padding:5% 20px;
 }
 
 .heroImg,
