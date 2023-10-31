@@ -7,7 +7,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin:7% 20px;
+    padding:7% 20px;
 }
 
 .heroImg,
@@ -87,7 +87,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 95%;
     margin: 10% 20px;
 }
 .whySearchwave img{
@@ -133,6 +133,7 @@
     color: var(--color-darkseagreen);
     margin-left: 70px;
     margin-top: 200px;
+    margin-bottom: 100px;
 }
 .your-online-presence {
     color: var(--color-darkslategray);
@@ -140,10 +141,7 @@
 
 /*child content*/
 .rectangle-div {
-    position: relative;
-    padding: 20 70px;
-    left: 50%;
-    transform: translateX(-50% );
+    
     border-radius: 15px;
     background-color: rgba(146, 227, 169, 0.8);
     width: 70%;
@@ -368,10 +366,7 @@
     align-items: center;
  }
  
- .rectangle-div{
-    left: 50%;
-    transform: translateX(-70%);
- }
+ 
  #show-more-button{
     display: none;
  }

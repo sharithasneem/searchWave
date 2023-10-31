@@ -1,0 +1,169 @@
+
+.heading{
+    display: flex;
+    height: 10vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    margin:40px 70px;
+}
+.gushing-header {
+    font-size: 3.8rem;
+    color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: gushing 1s steps(20) forwards;
+}
+@keyframes gushing {
+    to {
+        color: #003838;
+        width: 45%;
+    }
+}
+
+/*intro para*/
+.para {
+    max-width: 800px;
+     font-family: 'Roboto', Arial, sans-serif;
+     margin:0 70px;
+}
+
+.responsive-paragraph {
+    font-size: 25px;
+    line-height: 1.6;
+    color: #333;
+}
+/*why searchwave*/
+.whySearchwave {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    margin: 10% 20px;
+}
+
+.whySearchwave img {
+    margin: 0%;
+    width: 30%;
+    height: 5px;
+}
+/* styles.css */
+.process-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90%;
+    /* Adjust the max width as needed */
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.process-step {
+    width: calc(35% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+.process-step img {
+    max-width: 100%;
+    height: auto;
+}
+.process-step p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #333;
+    /* Text color */
+}
+.process-step p span{
+    color: #F4B400;
+    font-weight: 800;
+}
+.sitemap {
+    width: 100%;
+    height: 280px;
+}
+@media (max-width:1096px) {
+    .whySearchwave img {
+            height: 3px;
+            width: 38%;
+        }
+    @keyframes gushing {
+            to {
+                color: #003838;
+                width: 60%;
+            }
+        }
+
+}
+/* Add more media queries for smaller screens if necessary */
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .whySearchwave h1 {
+            font-size: 40px;
+        }
+    .process-step {
+        width: calc(50% - 20px);
+    }
+    .process-step p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    .gushing-header {
+        font-size: 3rem;
+    }
+    .responsive-paragraph {
+    font-size: 20px;
+    }
+    @keyframes gushing {
+        to {
+            color: #003838;
+            width: 85%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .para{
+        margin: 0px 30px;
+    }
+    .whySearchwave h1 {
+     font-size: 30px;
+    }
+    .process-container {
+        padding: 100px 0;
+    }
+
+    .process-step {
+        width: calc(100% - 20px);
+        margin-top: 50px;
+    }
+
+    .process-step p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    .gushing-header {
+        font-size: 2rem;
+    }
+    .responsive-paragraph {
+        font-size: 18px;
+    }
+    .sitemap{
+    margin-top: 20px;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+}
+    .heading{
+            margin:20px 25px;
+        }
+    @keyframes gushing {
+        to {
+            color: #003838;
+            width: 100%;
+        }
+    }
+    
+}
