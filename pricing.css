@@ -1,3 +1,11 @@
+ .common-container {
+    position: relative;
+}
+.dropDown {
+    z-index: 1;
+    
+}
+
 /* Updated CSS for the pricing card */
 .pricing-details h2 {
     color: #333;
@@ -143,6 +151,28 @@ ul.bullet-points li::before {
 .attractive-button:hover {
     background-color: #f3ba50;
 }
+.content {
+    margin-top: 30%;
+    background-color: hsl(7, 100%, 68%, 50%);
+    width: 100%;
+    height: 350px;
+    color: #003838;
+    font-family: Jost;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 2% 40px;
+    margin-bottom: 5%;
+}
+
+.content_para {
+    font-size: 25px;
+    line-height: 1.5;
+    color: #333;
+    text-align: left;
+    padding: 20px 0;
+    max-width: 100%;
+}
 
 /* Add media queries for responsiveness */
 @media (max-width: 768px) {
@@ -166,7 +196,16 @@ ul.bullet-points li::before {
     .pricing-details h2 {
         font-size: 23px; /* Adjust the font size for smaller screens */
     }
-
+    .content{
+    padding: 2% 20px;
+    }
+    .content_para{
+        font-size: 23px;
+        line-height: 1.4;
+    }
+    .content h2{
+        font-size: 30px;
+    }
 }
 @media (max-width:550px){
     .price-and-button {
@@ -175,5 +214,15 @@ ul.bullet-points li::before {
         }
     .price{
         margin-bottom: 20px;
+    }
+    .content{
+        height: 400px;
+    }
+    .content_para{
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .content h2{
+        font-size: 25px;
     }
 }
