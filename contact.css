@@ -33,7 +33,7 @@
     align-items: center;
     color: #003838;
     font-family: Jost;
-    font-size: 13px;
+    font-size: 18px;
     
 }
 /*heading */
@@ -56,6 +56,10 @@
     .sitemap{
         height:400px;
      }
+    .card{
+    width: 80%;
+    font-size: 15px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -64,14 +68,15 @@
         height: auto;
      }
      .bro{
-        width: 95%;
+        width: 100%;
      }
      .contact{
         margin-top: 50px;
         width: 70%;
      }
      .card{
-        width: 95%;
+        width: 80%;
+        height: 55px;
      }
      
      .whySearchwave{
@@ -84,5 +89,17 @@
 @media (max-width:550px) {
     .sitemap{
         height: 600px;
+    }
+    .contact{
+        width: 100%;
+    }
+    .card{
+        font-size: 15px;
+        width: 100%;
+    }
+}
+@media (max-width:377px) {
+    .card{
+        font-size: 11px;
     }
 }

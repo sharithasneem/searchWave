@@ -473,5 +473,7 @@ h2 {
  
 }
 @media (max-width: 390px) {
-
+.get-in-touch {
+        font-size: 15px;
+    }
 }
