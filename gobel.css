@@ -221,10 +221,6 @@ header {
     opacity: 1;
 }
 
-.hidden {
-    display: none;
-}
-
 .btn {
     display: flex;
     justify-content: space-between;
@@ -437,9 +433,6 @@ h2 {
     .footer,.container {
             width: 100%;
         }
-    .hidden {
-    display: flex;
-    }
     .follow-us-parent{
         height: 20%;
     }
