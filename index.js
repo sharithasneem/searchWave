@@ -5,12 +5,28 @@ const menuIcon = document.getElementById("menuIcon");
 const computedStyle = getComputedStyle(dropDown);
 const displayValue = computedStyle.getPropertyValue("display");
 const cancel = document.querySelector(".cancel");
-
-// Get the "Show More" buttons and the hidden card
 const leftShowMoreButton = document.querySelector(".left-top");
 const rightShowMoreButton = document.querySelector(".right-top");
 const hiddenCard = document.querySelector(".hidden");
 const showCard = document.querySelector(".showCard");
+const faqCards = document.querySelectorAll(".faq-card");
+
+// Add click event listeners to each question
+faqCards.forEach((card, index) => {
+	const question = card.querySelector(".question");
+	const answer = card.querySelector(".answer");
+
+	question.addEventListener("click", () => {
+		// Toggle answer visibility
+		if (answer.style.display === "none") {
+			answer.style.display = "block";
+			question.classList.add("active"); // Add a class to style the active question
+		} else {
+			answer.style.display = "none";
+			question.classList.remove("active"); // Remove the active class
+		}
+	});
+});
 
 /* nav bar */
 menuIcon.addEventListener("click", () => {

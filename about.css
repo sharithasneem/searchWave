@@ -85,9 +85,10 @@
 }
 
 .answer {
-    padding: 10px;
+    padding: 30px;
     border: 1px solid #ddd;
     display: none;
+    font-size: 20px;
 }
 /*footer*/
 .sitemap {
