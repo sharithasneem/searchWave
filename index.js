@@ -26,12 +26,18 @@ cancel.addEventListener("click", () => {
 
 // Add a click event listener to the left "Show More" button
 leftShowMoreButton.addEventListener("click", function () {
-	hiddenCard.style.display = "block"; // Show the hidden card
-	leftShowMoreButton.style.display = "none"; // Hide the left button
+	hiddenCard.style.display = "none";
+	showCard.style.display = "block";
+	leftShowMoreButton.style.display = "none";
+	rightShowMoreButton.style.display = "flex";
+	console.log("left");
 });
 
 // Add a click event listener to the right "Show More" button
 rightShowMoreButton.addEventListener("click", function () {
-	hiddenCard.style.display = "block"; // Show the hidden card
-	rightShowMoreButton.style.display = "none"; // Hide the right button
+	hiddenCard.style.display = "block";
+	rightShowMoreButton.style.display = "none";
+	leftShowMoreButton.style.display = "flex";
+	showCard.style.display = "none";
+	console.log("right");
 });

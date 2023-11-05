@@ -232,6 +232,9 @@
     width: 50px;
     margin: 20px 0;
 }
+.left-top{
+    display: none;
+}
 .sitemap {
     width: 100%;
     height: 280px;
