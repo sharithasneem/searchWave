@@ -328,6 +328,9 @@ h2 {
     font-weight: 300;
     line-height: normal;
 }
+.get-in-touch {
+    text-decoration: none;
+}
 /* 1st screen change */
 @media (max-width: 1103px) {
 

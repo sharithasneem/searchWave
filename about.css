@@ -89,6 +89,7 @@
     border: 1px solid #ddd;
     display: none;
     font-size: 20px;
+    color: rgb(93, 97, 97);
 }
 /*footer*/
 .sitemap {
@@ -266,7 +267,10 @@
     margin: 0px;
     margin-bottom: 50px;
     }
- 
+    .question h2{
+        font-size: 20px;
+    }
+    
 }
 
 
@@ -286,6 +290,7 @@
     
     .answer {
         padding: 10px;
+        font-size: 15px;
     }
     .hero{
         height: 85vh;
@@ -296,8 +301,9 @@
     .whySearchwave h1{
         font-size: 55px;
     }
-    
-    
+    .question img{
+        width: 18px;
+    }
 }
 
 /* Media query for mobile-sized screens */
@@ -314,10 +320,11 @@
         font-size: 1rem;
     }
     .question h2{
-        font-size: 18px;
+        font-size: 15px;
     }
     .answer {
         padding: 5px;
+        font-size: 12px;
     }
     .strengthen-your-online-container {
         font-size: 30px;
@@ -339,4 +346,15 @@
     .heroimg img{
     margin-bottom: 20px;
     }
+
+}
+@media (max-width:424px) {
+    .question h2 {
+            font-size: 11px;
+        }
+}
+@media (max-width:370px){
+    .question img {
+            width: 15px;
+        }
 }

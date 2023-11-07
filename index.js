@@ -10,7 +10,7 @@ const rightShowMoreButton = document.querySelector(".right-top");
 const hiddenCard = document.querySelector(".hidden");
 const showCard = document.querySelector(".showCard");
 const faqCards = document.querySelectorAll(".faq-card");
-
+const homebtn = document.querySelector("#getbtn");
 // Add click event listeners to each question
 faqCards.forEach((card, index) => {
 	const question = card.querySelector(".question");
@@ -56,4 +56,9 @@ rightShowMoreButton.addEventListener("click", function () {
 	leftShowMoreButton.style.display = "flex";
 	showCard.style.display = "none";
 	console.log("right");
+});
+
+homebtn.addEventListener("click", function () {
+	window.location.href = "contact.html";
+	console.log("dl");
 });
